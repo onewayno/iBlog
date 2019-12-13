@@ -1,0 +1,40 @@
+target
+!.mvn/wrapper/maven-wrapper.jar
+
+### SVN ###
+.svn
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+**/application.local.properties
+**/quartz.local.properties
+
+/temp/
+
+generated
+**/src/main/webapp/WEB-INF/classes
+
+*.DS_Store
+.faces-config.xml.jsfdia
