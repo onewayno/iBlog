@@ -1,4 +1,4 @@
-package com.one.core.domain.entity;
+package com.one.domain.entity.system;
 
 
 import javax.persistence.Column;
