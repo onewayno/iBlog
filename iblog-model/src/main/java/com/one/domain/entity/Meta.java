@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Date;
 @Table(name = "meta")
 @Data
 @ToString
+@Entity
 public class Meta {
     @Id
     private Integer meta_id;

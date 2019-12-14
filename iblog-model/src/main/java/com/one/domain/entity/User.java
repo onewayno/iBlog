@@ -4,12 +4,14 @@ import lombok.Data;
 import lombok.ToString;
 
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name = "user")
 @Data
 @ToString
+@Entity
 public class User {
     @Id
     private Integer user_id;

@@ -4,14 +4,13 @@ import lombok.Data;
 import lombok.ToString;
 
 
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
 @ToString
 @Table(name = "comment")
+@Entity
 public class Comment {
 
     @Id
@@ -22,14 +21,17 @@ public class Comment {
 
     private String website;
     private String email;
-    @OneToOne(mappedBy = "user_id")
-    //private int userId;
-    private User user;
+  /*  @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;*/
+
+
     private int parentId;
     private String identify;
     private String isAduit;
-    @OneToOne(mappedBy = "user_id")
-    //private int toUserId;
-    private User toUser;
+    /*@OneToOne
+    @JoinColumn(name = "user_id")
+    private User toUser;*/
+    //  private User toUser;
 
 }

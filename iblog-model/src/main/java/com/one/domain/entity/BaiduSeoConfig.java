@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Date;
 @Table(name = "baidu_seo_config")
 @Data
 @ToString
+@Entity
 public class BaiduSeoConfig {
     @Id
     private Integer baidu_seo_config_id;

@@ -1,11 +1,13 @@
 package com.one.domain.entity;
 
+import com.sun.jmx.snmp.Timestamp;
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.annotations.Type;
 
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+
 import java.util.Date;
 
 @Table(name = "agent_user")
@@ -20,7 +22,7 @@ public class AgentUser {
     private String name;
     //@Temporal(TemporalType.TIMESTAMP)
     @Column(name = "gmtCreatett")
-    private Timestamp gmtCreate;
+    private Date gmtCreatett;
     private String website;
     private String email;
 

@@ -4,21 +4,20 @@ import lombok.Data;
 import lombok.ToString;
 
 
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Table(name = "page")
 @Data
 @ToString
+@Entity
 public class Page {
     @Id
     private Integer page_id;
     private String pattern;
     private String path;
-    @OneToOne(mappedBy = "user_id")
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
     // private Integer userId;
     private Date gmtCreate;
@@ -26,8 +25,16 @@ public class Page {
     private Date gmtModified;
     private String name;
     //private Integer articleId;
+    /* @ManyToOne*/
+    /* @JoinColumn(name = "article_id")*/
+    /* private Article article;*/
+
+//todo
+   /* @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "article_id")
-    private Article article;
+    private  Article article;
+*/
+
     private Integer articleId;
     private Integer isUsing;
     private String remark;

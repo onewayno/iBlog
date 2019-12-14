@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 
-//@Entity
+@Entity
 @Table(name = "access_log")
 @Data
 @ToString
@@ -24,7 +24,7 @@ public class AccessLog {
     private String info;
     private String userAgent;
 
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "agent_user_id")
     //  private Integer agentUserId;
     private List<AgentUser> agentUserList;
