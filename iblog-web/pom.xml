@@ -13,104 +13,7 @@
     <artifactId>iblog-web</artifactId>
     <packaging>pom</packaging>
 
-
-   <!-- <dependencies>
-        <dependency>
-            <groupId>com.one</groupId>
-            <artifactId>iblog-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-       &lt;!&ndash; <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>&ndash;&gt;
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-io</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-    </dependencies>-->
-
-    <!--<dependencies>
-        &lt;!&ndash; 导入Eureka客户端的依赖 &ndash;&gt;
-       &lt;!&ndash; <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>&ndash;&gt;
-       &lt;!&ndash; <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>&ndash;&gt;
-       &lt;!&ndash; <dependency>
-            <groupId>com.one</groupId>
-            <artifactId>iblog-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-&ndash;&gt;
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
-      &lt;!&ndash;  <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>&ndash;&gt;
-      &lt;!&ndash;  <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>&ndash;&gt;
-       &lt;!&ndash; <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>&ndash;&gt;
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.0.3.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>com.one</groupId>
-            <artifactId>iblog-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-
-
-    </dependencies>-->
     <dependencies>
-        <!-- <dependency>
-             <groupId>com.one</groupId>
-             <artifactId>iblog-core</artifactId>
-             <version>1.0-SNAPSHOT</version>
-         </dependency>-->
         <dependency>
             <groupId>com.one</groupId>
             <artifactId>iblog-service</artifactId>
@@ -124,24 +27,14 @@
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-
-        <!--<dependency>
-            <groupId>com.one</groupId>
-            <artifactId>iblog-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>-->
-
-
     </dependencies>
 
 </project>

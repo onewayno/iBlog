@@ -1,9 +1,7 @@
 package com.one.web.controller;
 
 
-import com.one.domain.entity.AgentUser;
-
-
+import com.one.domain.entity.system.UserDetil;
 import com.one.service.TestdbService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +18,14 @@ public class Controller {
     private TestdbService testdb;
 
     @GetMapping("/abc")
-    public List<AgentUser> abc() {
+    public List<UserDetil> abc() {
         return testdb.test();
     }
+
+    @GetMapping("/ab")
+    public UserDetil abc1() {
+        return testdb.test01();
+    }
+
 
 }
